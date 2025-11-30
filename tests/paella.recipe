@@ -1,0 +1,24 @@
+receta "Paella" {
+    rinde 4 porciones
+    tiempo_preparacion 20 minutos
+    tiempo_coccion 30 minutos
+
+    tags: [cena, espanola, "sin gluten"]
+
+    ingredientes {
+        ingrediente arroz cantidad 200g costo 1.5 calorias 500
+        ingrediente pollo cantidad 300g costo 3.0 calorias 400
+        ingrediente aceite cantidad 20ml costo 0.2 calorias 100
+    }
+
+    pasos {
+        paso 1 descripcion "Calienta el aceite" 
+        paso 2 descripcion "Agrega el arroz" usa arroz
+        paso 3 descripcion "Agrega el pollo" usa pollo depende_de 2
+    }
+
+    nutricion {
+        total_costo
+        total_calorias
+    }
+}

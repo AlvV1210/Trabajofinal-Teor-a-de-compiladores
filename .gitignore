@@ -1,0 +1,77 @@
+# =====================================
+# Build / Compilación
+# =====================================
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
+
+# Ejecutables
+recipec
+recipec.exe
+output.ll
+out.o
+out
+
+# =====================================
+# Archivos generados por ANTLR
+# Solo ignorar la carpeta generada si se vuelve muy pesada
+# (opcional: tú decides si quieres versionarla)
+# =====================================
+frontend/generated/*.class
+frontend/generated/*.tokens
+frontend/generated/*.interp
+frontend/generated/*.log
+
+# =====================================
+# Archivos temporales o de tu IDE
+# =====================================
+*.swp
+*.swo
+*.tmp
+*.bak
+*.log
+*.cache
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+
+# =====================================
+# Sistema Operativo
+# =====================================
+.DS_Store
+Thumbs.db
+
+# =====================================
+# Python (solo si usas scripts)
+# =====================================
+__pycache__/
+*.pyc
+
+# =====================================
+# ANTLR Repo (external/antlr4)
+# Solo ignora archivos temporales que produce ANTLR
+# PERO NO ignores el código fuente del runtime
+# =====================================
+external/antlr4/build/
+external/antlr4/.gradle/
+external/antlr4/.mvn/
+external/antlr4/target/
+external/antlr4/antlr4-cpp-runtime*.zip
+
+# =====================================
+# Docker
+# =====================================
+*.dockerignore
